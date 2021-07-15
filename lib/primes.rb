@@ -24,7 +24,7 @@ class PrimeFinder
       end
     end
     num_array.each_with_index do |element, index|
-      if element%7 === 0 && element !=3
+      if element%7 === 0 && element !=7
         num_array.delete_at(index)
       end
     end
