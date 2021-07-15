@@ -7,7 +7,11 @@ describe('#find_primes') do
     expect(number.find_primes).to(eq([2]))
   end
   it('removes all multiples of 2 other than 2') do
-    number = PrimeFinder.new(10)
-    expect(number.find_primes).to(eq([2,3,5,7,9]))
+    number = PrimeFinder.new(8)
+    expect(number.find_primes).to(eq([2,3,5,7]))
+  end
+  it('removes all multiples of 3 other than 3') do 
+    number = PrimeFinder.new(13)
+    expect(number.find_primes).to(eq([2,3,5,7,11,13]))
   end
 end

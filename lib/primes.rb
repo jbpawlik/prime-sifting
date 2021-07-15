@@ -13,6 +13,21 @@ class PrimeFinder
         num_array.delete_at(index)
       end
     end
+    num_array.each_with_index do |element, index|
+      if element%3 === 0 && element !=3
+        num_array.delete_at(index)
+      end
+    end
+    num_array.each_with_index do |element, index|
+      if element%5 === 0 && element !=5
+        num_array.delete_at(index)
+      end
+    end
+    num_array.each_with_index do |element, index|
+      if element%7 === 0 && element !=3
+        num_array.delete_at(index)
+      end
+    end
     return num_array
   end
 end
